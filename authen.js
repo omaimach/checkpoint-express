@@ -3,7 +3,7 @@ const verifyAuth = (req , res , next) => {
     const day = date.getDay()
     const hour = date.getHours()
     
-if(( day == 1 || day == 7 ) || (hour <= 5 || hour >=17 )) {
+if(( day == 0|| day == 6 ) || (hour <= 9 || hour >=17 )) {
    res.send('erreur')
 }else {next()}
 
